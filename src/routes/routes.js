@@ -1,11 +1,14 @@
 const router = require('express').Router()
 
-router.get('/clientes', (req, res) => {
+const ProductsController = require('../controllers/products')
 
-  res.send({
-    ok: 123
-  })
+//VERBOS HTTP
+//GET - obter dados
+//POST - enviar dados
+//PUT - atualizar dados
+//DELETE - remover dados
 
-})
+router.get('/products',ProductsController.get)
+
 
 module.exports = router
