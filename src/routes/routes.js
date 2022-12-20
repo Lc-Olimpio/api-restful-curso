@@ -8,7 +8,7 @@ const ProductsController = require('../controllers/products')
 //PUT - atualizar dados
 //DELETE - remover dados
 
-router.get('/products',ProductsController.get)
+router.get('/products/:id?',ProductsController.get)
 
 
 module.exports = router
